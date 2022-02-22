@@ -10,7 +10,7 @@ spec:
       chart: ./charts/weave-gitops
       sourceRef:
         kind: GitRepository
-        name: weave-gitops
+        name: test-chart
         namespace: flux-system
       interval: 1m
   values:
