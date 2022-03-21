@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: Bucket
+metadata:
+  name: this-will-fail-no-worries
+  namespace: flux-system
+spec:
+  bucketName: podinfo
+  endpoint: minio.minio.svc.cluster.local:9000
+  insecure: true
+  interval: 10m0s
+  provider: generic
+
