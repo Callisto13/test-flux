@@ -31,7 +31,7 @@ spec:
           key: client-secret
     config:
       # Set it to a valid URL
-      issuer: http://localhost:9001
+      issuer: https://localhost:9001
       # See https://dexidp.io/docs/storage/ for more options
       storage:
         type: memory
@@ -53,7 +53,7 @@ spec:
         config:
           clientID: $GITHUB_CLIENT_ID
           clientSecret: $GITHUB_CLIENT_SECRET
-          redirectURI: https://dex.dev.example.tld/callback
+          redirectURI: https://localhost:9001/oauth2/callback
           orgs:
           - name: weaveworks
             teams:
