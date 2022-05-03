@@ -58,11 +58,11 @@ spec:
           - name: weaveworks
             teams:
             - quick-silver
-      staticPasswords:
-      - email: "admin@example.tld"
-        hash: "$2a$10$Da5ti4mB3DZ3GaQd1UNorueouBP/WfDg82e9q/WUGxeVnUuX8SxxO"
-        username: "admin"
-        userID: "08a8684b-db88-4b73-90a9-3cd1661f5466"
+      # staticPasswords:
+      # - email: "admin@example.tld"
+      #   hash: "$2a$10$Da5ti4mB3DZ3GaQd1UNorueouBP/WfDg82e9q/WUGxeVnUuX8SxxO"
+      #   username: "admin"
+      #   userID: "08a8684b-db88-4b73-90a9-3cd1661f5466"
     ingress:
       enabled: true
       className: nginx
